@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="page-content">
+        <!-- Heading Section -->
+        <form action="">
+
+            <h1 class="heading">Survey Form</h1>
+            <p class="para">Feel free to answer the questions below based on you own expereince and opinion. If you are not convenient on answering a particular question please skip it by answering "No". Every answer would be very appreciated. Thank you for your time.</p>
+
+        <!-- Form Content Section -->
+        
+        <div class="form-content">
+                <div class="left-part">
+                    <label for="yname" class="names">Your Name</label>
+                    <br>
+                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                    <br>
+                    <label for="email" class="names">Your Email</label>
+                    <br>
+                    <input type="email" id="email" name="email" placeholder="user@user.com" required>
+                    <br>
+                    <label for="phone" class="names">Your Phone Number</label>
+                    <br>
+                    <input type="tel" id="phone" name="phone" placeholder="9999999999" required>
+                    <br>
+
+
+                    <label for="location" class="names">Where Do You Live?</label>
+                    <br>
+                    <select name="location" id="location" required>
+                        <option value="">Select</option>
+                        <option value="Hyderabad">Hyderabad</option>
+                        <option value="Bengaluru">Bengaluru</option>
+                        <option value="Chennai">Chennai</option>
+                        <option value="Mumbai">Mumbai</option>
+                    </select>
+
+                    <!-- Age Section -->
+
+                    <fieldset>
+                        <legend>Age:</legend>
+                        <div class="age-part">
+                            <div class="left-sec">
+                                <input type="radio" name="age" id="age" value="15-20">
+                                <label for="age">15-20</label>
+                                <br>
+                                <input type="radio" name="age" id="age" value="21-30">
+                                <label for="age">21-30</label>
+                                <br>
+                                <input type="radio" name="age" id="age" value="31-40">
+                                <label for="age">31-40</label>
+                                <br>
+                            </div>
+                            <div class="right-sec">
+                                <input type="radio" name="age" id="age" value="41-50">
+                                <label for="age">41-50</label>
+                                <br>
+                                <input type="radio" name="age" id="age" value="Prefer not to say">
+                                <label for="age">Prefer not to say</label>
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <!-- Coding Rating Section -->
+
+                    <p>How would you rate your proficiency</p>
+                    <input type="radio" id="rating" name="rating" value="Begginer">
+                    <label for="rating">Begginer</label>
+                    <br>
+                    <input type="radio" id="rating" name="rating" value="Intermediate">
+                    <label for="rating">Intermediate</label>
+                    <br>
+                    <input type="radio" name="rating" id="rating" value="Advance">
+                    <label for="rating">Advance</label>
+                    <br>
+
+                </div>
+            <div class="right-part">
+                 <!-- Coding contest Section -->
+
+                 <p>Have you Ever appreared in any coding contest?</p>
+                 <input type="radio" id="contest" name="contest" value="Yes">
+                 <label for="contest">Yes</label>
+                 <br>
+                 <input type="radio" id="contest" name="contest" value="No">
+                 <label for="contest">No</label>
+                 <br>
+
+                 <!-- Text Area Section -->
+                 <p>Discuss what drives your passion for coding and outline your aspirations in the field</p>
+                 <textarea name="text" id="text" required></textarea>
+                 <p>What are some of the challnge you face while coding?</p>
+                 <textarea name="text" id="text" required></textarea>
+                 <p>Please list the Data Structure you have a Strong Understanding of</p>
+                 <textarea name="text" id="text" required></textarea>
+
+                 <!-- Submit Button -->
+                 <input type="submit" value="Submit Form">
+            </div>
+        </div>
+
+
+</body>
+</html>
